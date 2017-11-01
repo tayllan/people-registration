@@ -1,0 +1,84 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+#people {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-style: solid;
+	border-width: thin;
+	border-collapse: collapse;
+}
+
+#people th {
+	font-size: 20px;
+	font-weight:bold;
+	height: 40px;
+    padding: 10px;
+    border-bottom-style: solid;
+    border-width: thin;
+}
+
+#people tbody tr:nth-child(odd) {
+   background-color: #f2f2f2;
+}
+
+#people td {
+    text-align: center;
+
+    max-width:10vw;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+button {
+    font-size: 100%;
+    padding: .5em 1em;
+    color: rgba(0,0,0,.8);
+    border: transparent;
+    background-color: #E6E6E6;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+button.disabled {
+    border: none;
+    background-image: none;
+    filter: alpha(opacity=40);
+    opacity: .4;
+    cursor: not-allowed;
+    box-shadow: none;
+    pointer-events: none;
+}
+
+#new-person {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(28, 184, 65);
+}
+
+button.delete-person {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(202, 60, 60);
+}
+
+input {
+    padding: .5em .6em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
